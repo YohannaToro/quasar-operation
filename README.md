@@ -18,7 +18,9 @@ Posición de los satélites actualmente en servicio
 > - MongoD
 > - AWS
 >  
-
+ #### Librerias externas
+ [mas informacion](https://github.com/YohannaToro/quasar-operation/files/6112994/Operacion.Fuego.de.Quasar.1.pdf)
+ 
 ## Arquitectura
 ![Captura55](https://user-images.githubusercontent.com/37119524/110572533-99dc6e80-8127-11eb-85a1-69a510f88a46.png)
 
