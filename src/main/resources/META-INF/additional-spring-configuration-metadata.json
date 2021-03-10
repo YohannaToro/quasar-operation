@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "quasar.endpoint",
+      "type": "java.lang.String",
+      "description": "Description for quasar.endpont."
+    }
+  ] }
