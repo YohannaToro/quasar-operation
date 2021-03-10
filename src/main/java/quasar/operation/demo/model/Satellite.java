@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class Satellite {
 
     @Id
-    private String satelliteName;
+    private String name;
 
     private  double distance;
 

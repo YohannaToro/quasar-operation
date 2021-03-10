@@ -30,16 +30,18 @@ public class CommunicationController {
         this.satelliteRepository = satelliteRepository;
     }
 
-
     @PostMapping
     public ResponseEntity<Ship> postListSatellite(@RequestBody SatelliteList satellites) throws NotFoundShipPosition, NotFoundShipMessage {
+
         return new ResponseEntity<>(communicationService.getShip(satellites), HttpStatus.OK);
     }
 
+
     @PostMapping("/{satellite_name}")
     public void postSatellite(@RequestBody Satellite satellite,@PathVariable String satellite_name){
+        System.out.println(satellite.getDistance());
 
-        satellite.setSatelliteName(satellite_name);
+        satellite.setName(satellite_name);
         satelliteRepository.save(satellite);
 
     }

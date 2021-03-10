@@ -58,8 +58,8 @@ public class LocationServiceImpl implements LocationService {
         }
 
         for (int i = 0; i<satelliteList.size()-1; i++){
-            String nameSatellite1 = satelliteList.get(i).getSatelliteName();
-            String nameSatellite2 = satelliteList.get(i+1).getSatelliteName();
+            String nameSatellite1 = satelliteList.get(i).getName();
+            String nameSatellite2 = satelliteList.get(i+1).getName();
             Position p1 = getPositionByName(nameSatellite1);
             Position p2 = getPositionByName(nameSatellite2);
 
@@ -138,7 +138,7 @@ public class LocationServiceImpl implements LocationService {
         double[][] positions= new double[satellites.size()][];
 
         for (int i=0; i<satellites.size();i++){
-            Position position= getPositionByName(satellites.get(i).getSatelliteName());
+            Position position= getPositionByName(satellites.get(i).getName());
             double x=position.getCoordinateX();
             double y=position.getCoordinateY();
             positions[i]= new double[]{x, y};
@@ -155,6 +155,7 @@ public class LocationServiceImpl implements LocationService {
      * @throws NotFoundShipPosition
      */
      private Position getPositionByName(String name) throws NotFoundShipPosition{
+
          staticSatelliteRepository.findById(name);
          if (staticSatelliteRepository.findById(name).isPresent()){
              return staticSatelliteRepository.findById(name).get().getPosition();
