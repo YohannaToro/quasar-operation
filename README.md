@@ -49,7 +49,7 @@ npm start
 ```
 
 ## Arquitectura
-![Captura55](https://user-images.githubusercontent.com/37119524/70970579-b4cb4a80-206c-11ea-846e-2c2da62d7202.PNG)
+![Captura55](https://user-images.githubusercontent.com/37119524/110572533-99dc6e80-8127-11eb-85a1-69a510f88a46.png)
 
 
 
